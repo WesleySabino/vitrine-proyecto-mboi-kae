@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proyecto Mboi Ka'e</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Principal">
+        <span class="logo">Mboi Ka'e</span>
+        <a class="nav-cta" href="#contacto">Contactar</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Conjunto habitacional</p>
+          <h1 id="hero-title"></h1>
+          <p id="hero-description" class="hero-description"></p>
+          <div class="hero-actions">
+            <a id="hero-cta" class="primary-button" href="#contacto">Agendar visita</a>
+            <a class="secondary-button" href="#destacados">Ver detalles</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Resumen del proyecto">
+          <h2>Resumen</h2>
+          <ul>
+            <li><span>Estado</span><strong id="hero-status"></strong></li>
+            <li><span>Ubicación</span><strong id="hero-location"></strong></li>
+            <li><span>Financiamiento</span><strong id="hero-pricing"></strong></li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="destacados" class="highlights" aria-labelledby="highlights-title">
+        <div class="section-heading">
+          <h2 id="highlights-title">Detalles que elevan el proyecto</h2>
+          <p id="highlights-intro"></p>
+        </div>
+        <div id="highlights-grid" class="highlights-grid"></div>
+      </section>
+
+      <section class="location" aria-labelledby="location-title">
+        <div class="location-info">
+          <h2 id="location-title">Ubicación y entorno</h2>
+          <p id="location-description"></p>
+          <ul class="location-meta">
+            <li><span>Accesos</span><strong>Circuito vehicular + paseo peatonal</strong></li>
+            <li><span>Entorno</span><strong>Paisajismo tropical y áreas verdes</strong></li>
+          </ul>
+        </div>
+        <div class="map" role="img" aria-label="Mapa referencial del proyecto"></div>
+      </section>
+
+      <section class="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <h2 id="gallery-title">Galería conceptual</h2>
+          <p>Visualiza los puntos clave del conjunto habitacional.</p>
+        </div>
+        <div id="gallery-strip" class="gallery-strip"></div>
+      </section>
+
+      <section id="contacto" class="contact" aria-labelledby="contact-title">
+        <div class="contact-card">
+          <h2 id="contact-title">Hablemos del proyecto</h2>
+          <p id="contact-description"></p>
+          <div class="contact-actions">
+            <a id="contact-cta" class="primary-button" href="mailto:contacto@mbioikae.com">Enviar consulta</a>
+            <span class="contact-note">Respuesta en 24 horas hábiles.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Proyecto Mboi Ka'e · Vivienda social con identidad urbana</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
