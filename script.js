@@ -8,6 +8,7 @@ const fallbackContent = {
   pricingOrFinancing: "Consulta personalizada",
   contactCta: "Coordinar una visita",
   imageCaptions: [],
+  imageGallery: [],
 };
 
 const placeholderImage =
@@ -45,15 +46,16 @@ const buildHighlights = (features) => {
   });
 };
 
-const buildGallery = (captions) => {
+const buildGallery = (items) => {
   const strip = document.getElementById("gallery-strip");
   if (!strip) return;
   strip.innerHTML = "";
-  captions.forEach((caption) => {
+  items.forEach((item) => {
+    const caption = item?.alt || item?.caption || "";
     const figure = document.createElement("figure");
     figure.className = "gallery-card";
     const img = document.createElement("img");
-    img.src = placeholderImage;
+    img.src = item?.src || placeholderImage;
     img.alt = caption;
     const figcaption = document.createElement("figcaption");
     figcaption.textContent = caption;
@@ -63,16 +65,30 @@ const buildGallery = (captions) => {
   });
 };
 
-const normalizeContent = (content) => ({
-  ...fallbackContent,
-  ...content,
-  keyFeatures: content?.keyFeatures?.length
-    ? content.keyFeatures
-    : fallbackContent.keyFeatures,
-  imageCaptions: content?.imageCaptions?.length
-    ? content.imageCaptions
-    : fallbackContent.imageCaptions,
-});
+const normalizeContent = (content) => {
+  const normalizedContent = {
+    ...fallbackContent,
+    ...content,
+    keyFeatures: content?.keyFeatures?.length
+      ? content.keyFeatures
+      : fallbackContent.keyFeatures,
+    imageCaptions: content?.imageCaptions?.length
+      ? content.imageCaptions
+      : fallbackContent.imageCaptions,
+  };
+
+  const galleryItems = content?.imageGallery?.length
+    ? content.imageGallery
+    : normalizedContent.imageCaptions.map((caption) => ({
+        src: placeholderImage,
+        alt: caption,
+      }));
+
+  return {
+    ...normalizedContent,
+    imageGallery: galleryItems,
+  };
+};
 
 fetch("content.json")
   .then((response) => response.json())
@@ -97,7 +113,7 @@ fetch("content.json")
     setText("contact-cta", data.contactCta || "Enviar consulta");
 
     buildHighlights(data.keyFeatures);
-    buildGallery(data.imageCaptions);
+    buildGallery(data.imageGallery);
   })
   .catch(() => {
     const data = fallbackContent;
@@ -112,5 +128,5 @@ fetch("content.json")
     setText("hero-cta", data.contactCta);
     setText("contact-cta", data.contactCta);
     buildHighlights(data.keyFeatures);
-    buildGallery(data.imageCaptions);
+    buildGallery(data.imageGallery);
   });
