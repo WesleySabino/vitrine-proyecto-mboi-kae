@@ -1,0 +1,11 @@
+# MEMÓRIA DESCRITIVA
+
+O projeto apresentado corresponde a um conjunto habitacional de interesse social composto por dez residências unifamiliares organizadas de forma linear dentro de um condomínio fechado. Cada unidade é projetada sob um esquema compacto e eficiente, priorizando a funcionalidade sem descuidar da estética contemporânea nem da relação com o entorno. As residências estão dispostas em duas fileiras paralelas voltadas uma para a outra, separadas por um eixo central de circulação veicular e pedonal que atua como acesso comum, otimizando a circulação e favorecendo a convivência entre os moradores.
+
+Uma das características distintivas do projeto é a presença de cinco fachadas diferentes que se alternam simetricamente em ambos os lados do eixo central, gerando um jogo visual dinâmico e variado que rompe a monotonia típica dos empreendimentos de habitação em série. Essa repetição espelhada permite uma leitura harmônica do conjunto sem sacrificar a individualidade de cada unidade. As fachadas combinam texturas como pedra, similar à madeira, porcelanato e elementos de vegetação, alcançando uma integração equilibrada com a paisagem ao redor.
+
+Cada residência conta com dois dormitórios, sala de estar, cozinha e sala de jantar integradas, lavabo, banheiro suíte, churrasqueira (quincho) e lavanderia. O layout interno é claro e funcional, com circulações simples e bem iluminadas, apoiadas por aberturas estrategicamente posicionadas para aproveitar a ventilação cruzada e a iluminação natural. Em frente a cada unidade há uma área de estacionamento descoberta, ladeada por jardineiras e vegetação de baixo porte que suavizam o impacto do pavimento.
+
+Na cobertura de cada residência é projetada uma pequena varanda ou espaço técnico cercado por jardineiras e palmeiras, que além de proporcionar sombra, melhoram as condições térmicas do edifício. O paisagismo acompanha o percurso principal, com espécies tropicais e árvores que reforçam o caráter acolhedor e sustentável do conjunto. A pavimentação dos acessos pedonais e veiculares é resolvida com piso intertravado, facilitando o escoamento da água e melhorando o desempenho ambiental do projeto.
+
+Este empreendimento busca equilibrar economia construtiva com qualidade espacial e dignidade habitacional, propondo uma linguagem moderna, funcional e em sintonia com seu contexto natural.
